@@ -1,1 +1,1 @@
-# ismailtasdelen.github.io - ismailtasdelen.me ✔️
+dummy project for devOps students.
