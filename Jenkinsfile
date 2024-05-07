@@ -21,7 +21,7 @@ pipeline{
         
         stage("deploy"){
             steps{
-                bat 'docker run -p 80:80 my_web1'
+                bat 'docker run -p 80:80 -d my_web1'
             }
         }
     }
