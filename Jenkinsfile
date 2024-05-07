@@ -15,13 +15,13 @@ pipeline{
         
         stage("docker image"){
             steps{
-                bat 'docker build -t my_web1 .'
+                sh 'docker build -t my_web1 .'
             }
         }
         
         stage("deploy"){
             steps{
-                bat 'docker run -p 80:80 -d my_web1'
+                sh 'docker run -p 80:80 -d my_web1'
             }
         }
     }
